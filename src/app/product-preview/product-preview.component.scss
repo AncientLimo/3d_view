@@ -1,0 +1,131 @@
+.render {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5% !important;
+    border: none;
+}
+
+.render label{
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    font-size: 0.7em;
+    background: white;
+    border-radius: 4px;
+    padding: 2px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.render input{
+    width: 8px;
+    height: 8px;
+}
+
+.render button{
+    position: absolute;
+    right: 120px;
+    top: -20px;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.render button:hover{
+    transform: none;
+}
+
+ngt-canvas {
+    border-radius: 5% !important;
+    border: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+
+.material {
+    width: 140px;
+    height: max-content;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+.selected {
+    position: relative;
+}
+
+.picker {
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+button:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.picker button {
+    padding: 16px;
+    border: none;
+    width: 30px;
+    border-radius: 50%;
+    transition: .2s ease-in-out 0s;
+}
+
+.selected::after {
+    content: '✓';
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background-color: green;
+    border-radius: 70%;
+    width: 15px;
+    font-size: 13px;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.part button{
+    background-color: transparent;
+    border: none;
+    transition: .2s ease-in-out 0s;
+}
+
+.part img{
+    height: calc(90vh/7);
+}
+
+li:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
